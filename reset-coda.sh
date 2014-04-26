@@ -8,5 +8,4 @@ rm -rf ~/Library/Caches/com.panic.Coda2/
 rm -rf ~/Library/Application\ Support/Coda\ 2/
 rm -rf ~/Library/Saved\ Application\ State/com.panic.Coda2.savedState/
 
-sleep 1
-osascript -e 'tell application "Coda 2" to activate (run)'
+osascript -e 'delay 1' -e 'tell application "Coda 2"' -e 'reopen' -e 'activate' -e 'end tell'
